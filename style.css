@@ -14,16 +14,37 @@ a {
   outline: none;
 }
 
+input,
+button,
+select,
+textarea {
+  border: none;
+  background-color: transparent;
+}
+
+input:focus,
+button:focus,
+select:focus {
+  outline: none;
+}
+
+ul,
+ol,
 p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6
-  {
+h6,
+figure {
   margin: 0;
   padding: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
 }
 
 span {
@@ -36,6 +57,14 @@ span {
 
 .pink-color span {
   color: #f93939;
+}
+
+.light-blue {
+  background-color: rgba(133, 180, 255, 0.3019607843);
+}
+
+.light-pink {
+  background-color: rgba(255, 88, 88, 0.3019607843);
 }
 
 .wrapper {
@@ -187,15 +216,17 @@ span {
   line-height: 25px;
 }
 .cards-img {
-  background-color: rgba(255, 88, 88, 0.3019607843);
   padding: 15px;
   border-radius: 50%;
   height: 50px;
   width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.cards-img svg {
-  height: 100%;
-  width: 100%;
+.cards-img img {
+  height: 33px;
+  width: 33px;
 }
 
 .contact {
@@ -236,7 +267,7 @@ span {
   color: #000;
   background-color: #fff;
   padding: 8px 30px;
-  border: 1px solid #ff6258;
+  border: 1px solid #fff;
 }
 .contact-enq-btn:hover {
   background-color: #ff6258;
@@ -260,7 +291,7 @@ span {
 }
 
 .clients {
-  padding: 60px 0;
+  padding: 60px 20px;
 }
 .clients-logo {
   width: 33.33%;
@@ -321,8 +352,7 @@ footer .footer .Frieghtway p {
 }
 footer .footer .contact-deatils {
   width: 33.33%;
-  padding: 0 15px;
-  text-align: center;
+  padding: 0 0 0 9%;
 }
 footer .footer .contact-deatils span {
   font-family: "Mulish";
@@ -422,7 +452,7 @@ footer .footer .address-details p {
   }
   footer .footer .contact-deatils {
     width: 100%;
-    text-align: unset;
+    padding: 0 15px;
   }
   footer .footer .address-details {
     width: 100%;
